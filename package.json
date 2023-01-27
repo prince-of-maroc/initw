@@ -1,0 +1,20 @@
+{
+  "name": "init-tw",
+  "version": "2.0.0",
+  "description": "Add Tailwind to your Create React App project with just one line.",
+  "main": "bin.js",
+  "scripts": {
+    "test": "/* test command here */"
+  },
+  "type": "commonjs",
+  "keywords": [
+    "tailwind"
+  ],
+  "author": "prince-of-maroc",
+  "license": "MIT",
+  "bin": "./bin.js",
+  "devDependencies": {
+    "init-tw": "^1.0.2",
+    "tailwindcss": "^3.2.4"
+  }
+}
