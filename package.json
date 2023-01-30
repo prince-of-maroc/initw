@@ -1,7 +1,7 @@
 {
   "name": "initw",
-  "version": "2.1.3",
-  "description": "Add Tailwind to your Create React App project with just one line.",
+  "version": "3.0.0",
+  "description": "Add Tailwind to your project with just one line.",
   "main": "bin.js",
   "scripts": {
     "test": "/* test command here */"
