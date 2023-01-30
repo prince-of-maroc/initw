@@ -3,10 +3,6 @@
 const { exec } = require("child_process");
 const builder = process.argv[2];
 
-//
-//
-//
-
 /* 
       Define File Templates
                                 */
@@ -26,10 +22,6 @@ const postConfig =
 /*
         End of File Template Section
                                             */
-
-//
-//
-//
 
 /* Bash Script */
 function getBashScript(projectBuilder) {
