@@ -29,10 +29,10 @@ function getBashScript(projectBuilder) {
 
   if (projectBuilder == "cra") {
     // Create React App
-    bashScript = `npm i -D tailwindcss && echo "${craConfig}" > tailwind.config.js && echo "${cssIndex}" | cat - ./src/index.css > temp.css && mv temp.css ./src/index.css`;
+    bashScript = `npm i -D tailwindcss && echo "${craConfig}" > tailwind.config.js && echo "${cssIndex}" | cat - ./src/index.css > temp.css && mv temp.css ./src/index.css && npm install -D prettier prettier-plugin-tailwindcss`;
   } else if (builder == "vite") {
     // Vite
-    bashScript = `npm i -D tailwindcss postcss autoprefixer && echo "${viteConfig}" > tailwind.config.cjs && echo "${postConfig}" > postcss.config.cjs && echo "${cssIndex}" | cat - ./src/index.css > temp.css && mv temp.css ./src/index.css`;
+    bashScript = `npm i -D tailwindcss postcss autoprefixer && echo "${viteConfig}" > tailwind.config.cjs && echo "${postConfig}" > postcss.config.cjs && echo "${cssIndex}" | cat - ./src/index.css > temp.css && mv temp.css ./src/index.css && npm install -D prettier prettier-plugin-tailwindcss`;
   }
   return bashScript;
 }
